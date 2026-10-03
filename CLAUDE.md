@@ -18,5 +18,5 @@
   `INSTALLATION-WINDOWS.md`.
 - Base de données : un projet Supabase `crm-dakar` (région eu-west-3) existe, non branché.
   Son usage avec Prisma n'est pas testé.
-- Point ouvert : l'accueil exige une clé Context.dev sans bouton « passer » (voir
-  `docs/cheick/CONFIGURATION.md`).
+- Décisions déjà prises et leurs raisons : `docs/cheick/DECISIONS.md`. Le compte Context.dev
+  existe ; sa clé se saisit dans l'interface du CRM, jamais dans un fichier.

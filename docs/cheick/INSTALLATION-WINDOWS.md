@@ -103,11 +103,14 @@ Copiez le résultat comme valeur de `BETTER_AUTH_SECRET` dans `.env`. Remplissez
 | `ALLOWED_SIGN_IN` | votre adresse, ex. `vous@gmail.com` (une seule adresse = installation à une personne) |
 | `GOOGLE_CLIENT_ID` | l'ID client de l'étape 5 |
 | `GOOGLE_CLIENT_SECRET` | le secret de l'étape 5 |
+| `CRM_TELEMETRY_DISABLED` | `1` (coupe la télémétrie anonyme ; voir `DECISIONS.md`) |
 
 Laissez `DATABASE_URL` tel quel : il correspond déjà au Postgres de Docker. Pour faire
 fonctionner le poke de l'agent, générez aussi
 `AGENT_BRIDGE_SECRET` avec la même commande `openssl rand -base64 32`, et fixez
 `AGENT_URL="http://127.0.0.1:2000"` (pas `localhost`).
+
+La **clé Context.dev ne va pas dans `.env`** : vous la saisirez dans l'application, à l'étape 8.
 
 Ne commitez **jamais** `.env` (il est ignoré par Git ; ne le forcez pas).
 
