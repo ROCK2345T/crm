@@ -137,12 +137,20 @@ Notes importantes :
 
 ## Étape 8. Se connecter
 
-1. Ouvrez http://localhost:3000 et connectez-vous avec Google (avec l'adresse de
+1. Ouvrez `http://localhost:3000` (dans le navigateur de votre PC, jamais depuis une page web ou un chat) et connectez-vous avec Google (avec l'adresse de
    `ALLOWED_SIGN_IN`).
 2. L'accueil demande le nom et le site de votre entreprise.
 3. **Attention :** l'écran suivant demande une **clé Context.dev** et n'a pas de bouton
    « passer ». Voir `CONFIGURATION.md`, section « Piège ». C'est le point à trancher
    avant votre premier test.
+
+## À propos des adresses `localhost`
+
+`localhost` signifie « cette machine-ci ». Les adresses `http://localhost:3000` (app),
+`http://localhost:3001` (API) et `http://127.0.0.1:2000` (agent) ne fonctionnent que dans le
+navigateur **du PC où `bun run dev` tourne**. Cliquées dans un chat, une session
+Claude Code cloud ou un document en ligne, elles visent une autre machine et échouent :
+c'est normal. L'application doit d'abord tourner sur votre PC.
 
 ## Dépannage rapide
 
